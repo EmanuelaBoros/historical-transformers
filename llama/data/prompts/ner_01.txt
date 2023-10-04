@@ -1,0 +1,77 @@
+Annotate the entities within the given text based on the guidelines provided. Ensure the entities and their sub-components are accurately tagged. Once you've familiarized yourself with the guidelines below, you will be provided a text to annotate.
+
+Entity Guidelines:
+1. Entity Type: Person
+
+Subtypes:
+    pers.ind: Individual persons.
+    pers.ind.articleauthor: Author of a newspaper article.
+    pers.coll: Groups of individuals identifiable by a proper name, e.g., the Beatles.
+Components:
+    comp.func: Roles, including occupations, administrative roles, or societal roles.
+    comp.title: Titles (Mr., Mrs., etc.), military ranks, noble, and royal titles.
+    comp.qualifier: Adjectives describing the entity.
+    comp.name: Parts of a name: first, middle, last, or nicknames.
+    demonym: Residents of a specific location.
+Examples:
+    "Der König Mohamed VI" ➞ <pers.ind><title>König</title><name>Mohamed</name><qualifier>VI</qualifier></pers.ind>
+    "Le socialiste Bertrand Delanoë" ➞ <pers.ind><qualifier>socialiste</qualifier><name>Bertrand Delanoë</name></pers.ind>
+
+2. Entity Type: Organisation
+
+Subtypes:
+    org.ent: Companies selling products or providing services (e.g., hospitals, sports clubs).
+    org.adm: Organisations with a primary administrative role (e.g., town halls, ministries).
+    org.ent.pressagency: Newspapers material like AFP, Reuters.
+Examples:
+    "Die Peugeot Gesellschaft" ➞ Die <org.ent><name>Peugeot</name> Gesellschaft</org.ent>
+    "Die Stadtverwaltung Bern" ➞ Die <org.adm>Stadtverwaltung<loc.adm.town>Bern</loc.adm.town></org.adm>
+
+3. Entity Type: Location
+
+A. Administrative Locations:
+    loc.adm.town: Cities, villages, districts, boroughs.
+        "Zürich" ➞ <loc.adm.town>Zürich</loc.adm.town>
+        "Quartier Latin in Paris" ➞ Quartier <loc.adm.town>Latin</loc.adm.town> in <loc.adm.town>Paris</loc.adm.town>
+    loc.adm.reg: Internal divisions within a country.
+        "Die Autonome Gemeinschaft Baskenland" ➞ Die <loc.adm.reg>Autonome Gemeinschaft Baskenland</loc.adm.reg>
+        "la région Provence-Alpes-Côte d'Azur" ➞ la <loc.adm.reg>région Provence-Alpes-Côte d'Azur</loc.adm.reg>
+    loc.adm.nat: Countries.
+        "Das Vereinigte Königreich" ➞ Das <loc.adm.nat>Vereinigte Königreich</loc.adm.nat>
+        "La France" ➞ La <loc.adm.nat>France</loc.adm.nat>
+    loc.adm.sup: Global regions, continents.
+        "Das Baskenland" ➞ Das <loc.adm.sup>Baskenland</loc.adm.sup>
+        "L'Asie" ➞ L'<loc.adm.sup>Asie</loc.adm.sup>
+B. Physical Places:
+    loc.phys.geo: Terrestrial locations.
+        "Die Alpen" ➞ <loc.phys.geo>Die Alpen</loc.phys.geo>
+        "La vallée de la Loire" ➞ <loc.phys.geo>La vallée de la Loire</loc.phys.geo>
+    loc.phys.hydro: Aquatic sites.
+        "Die Spree" ➞ <loc.phys.hydro>Die Spree</loc.phys.hydro>
+        "L'Océan Atlantique" ➞ <loc.phys.hydro>L'Océan Atlantique</loc.phys.hydro>
+    loc.phys.astro: Astronomical places.
+        "Der Mond" ➞ <loc.phys.astro>Der Mond</loc.phys.astro>
+        "La planète Mars" ➞ <loc.phys.astro>La planète Mars</loc.phys.astro>
+
+4. Entity Type: Human Productions
+
+A. Media Production: prod.media
+    "Der Spiegel berichtet" ➞ <prod.media>Der Spiegel</prod.media> berichtet
+    "L'émission 'Tout le monde veut prendre sa place'" ➞ L'émission <prod.media>'Tout le monde veut prendre sa place'</prod.media>
+B. Doctrine: prod.doctr
+    "Der Kommunismus in Russland" ➞ Der <prod.doctr>Kommunismus</prod.doctr> in Russland
+    "Le Bouddhisme en Asie" ➞ Le <prod.doctr>Bouddhisme</prod.doctr> en Asie
+
+5. Entity Type: Time
+
+A. Date: time.date
+    "Montag 25. Januar 2010" ➞ <time.date.abs>Montag 25. Januar 2010</time.date.abs>
+    "lundi 25 janvier 2010" ➞ <time.date.abs>lundi 25 janvier 2010</time.date.abs>
+
+
+Begin Annotation:
+
+Please proceed with annotating the entities in the following text:
+[INSERT TEXT HERE]
+
+Here's the annotated text based on the guidelines:

@@ -1,0 +1,117 @@
+System	Evaluation	Label	P	R	F1	F1_std	P_std	R_std	TP	FP	FN
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	ALL	0.352	0.484	0.408				774	1423	826
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.NAT	0.696	0.636	0.664				96	42	55
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.REG	0.447	0.286	0.349				42	52	105
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.SUP	0.692	0.474	0.562				9	4	10
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.TOWN	0.627	0.487	0.548				217	129	229
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	LOC.FAC	0.0	0.0	0				0	14	18
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	LOC.ORO	0.355	0.579	0.44				11	20	8
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	LOC.PHYS.GEO	0.231	0.214	0.222				6	20	22
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	LOC.PHYS.HYDRO	0.316	0.261	0.286				6	13	17
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	LOC.UNK	0.0	0.0	0				0	2	3
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	ORG.ADM	0.142	0.349	0.201				15	91	28
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	ORG.ENT	0.134	0.612	0.219				41	266	26
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	ORG.ENT.PRESSAGENCY	0.333	0.25	0.286				5	10	15
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	PERS.COLL	0.167	0.2	0.182				1	5	4
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	PERS.IND	0.338	0.581	0.427				283	554	204
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	PERS.IND.ARTICLEAUTHOR	0.024	0.3	0.045				3	120	7
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	PROD.DOCTR	0.0	0.0	0				0	2	3
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	PROD.MEDIA	0.366	0.259	0.303				15	26	43
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-fuzzy-TIME-ALL-LED-ALL	TIME.DATE.ABS	0.312	0.453	0.369				24	53	29
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	ALL	0.258	0.354	0.299				567	1630	1033
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	LOC.ADM.NAT	0.616	0.563	0.588				85	53	66
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	LOC.ADM.REG	0.394	0.252	0.307				37	57	110
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	LOC.ADM.SUP	0.692	0.474	0.562				9	4	10
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	LOC.ADM.TOWN	0.54	0.419	0.472				187	159	259
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	LOC.FAC	0.0	0.0	0				0	14	18
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	LOC.ORO	0.194	0.316	0.24				6	25	13
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	LOC.PHYS.GEO	0.231	0.214	0.222				6	20	22
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	LOC.PHYS.HYDRO	0.316	0.261	0.286				6	13	17
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	LOC.UNK	0.0	0.0	0				0	2	3
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	ORG.ADM	0.075	0.186	0.107				8	98	35
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	ORG.ENT	0.078	0.358	0.128				24	283	43
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	ORG.ENT.PRESSAGENCY	0.267	0.2	0.229				4	11	16
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	PERS.COLL	0.167	0.2	0.182				1	5	4
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	PERS.IND	0.197	0.339	0.249				165	672	322
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	PERS.IND.ARTICLEAUTHOR	0.0	0.0	0				0	123	10
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	PROD.DOCTR	0.0	0.0	0				0	2	3
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	PROD.MEDIA	0.293	0.207	0.242				12	29	46
+../data/results/final_predictions.tsv	NE-FINE-LIT-micro-strict-TIME-ALL-LED-ALL	TIME.DATE.ABS	0.221	0.321	0.262				17	60	36
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	ALL	0.395	0.523	0.436	0.118	0.129	0.159			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.NAT	0.636	0.633	0.635	0.273	0.316	0.301			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.REG	0.361	0.228	0.32	0.28	0.325	0.267			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.SUP	0.667	0.5	0.667	0.426	0.471	0.463			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.TOWN	0.677	0.558	0.593	0.198	0.196	0.234			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.FAC	0.0	0.0	0.0	0.0	0.0	0.0			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.ORO	0.229	0.497	0.451	0.347	0.322	0.432			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.PHYS.GEO	0.242	0.22	0.255	0.34	0.342	0.325			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.PHYS.HYDRO	0.287	0.248	0.283	0.423	0.423	0.408			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.UNK	0.0	0.0	0.0	0.0	0.0	0.0			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	ORG.ADM	0.114	0.296	0.273	0.318	0.238	0.37			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	ORG.ENT	0.148	0.646	0.343	0.296	0.283	0.399			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	ORG.ENT.PRESSAGENCY	0.26	0.253	0.292	0.376	0.41	0.354			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	PERS.COLL	0.2	0.25	0.25	0.433	0.4	0.433			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	PERS.IND	0.334	0.61	0.431	0.148	0.19	0.211			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	PERS.IND.ARTICLEAUTHOR	0.02	0.214	0.129	0.205	0.078	0.364			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	PROD.DOCTR	0.0	0.0	0.0	0.0	0.0	0.0			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	PROD.MEDIA	0.36	0.309	0.319	0.295	0.337	0.333			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-fuzzy-TIME-ALL-LED-ALL	TIME.DATE.ABS	0.349	0.496	0.496	0.35	0.407	0.394			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	ALL	0.283	0.377	0.313	0.099	0.101	0.141			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	LOC.ADM.NAT	0.579	0.565	0.571	0.258	0.309	0.275			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	LOC.ADM.REG	0.338	0.211	0.299	0.275	0.319	0.254			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	LOC.ADM.SUP	0.667	0.5	0.667	0.426	0.471	0.463			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	LOC.ADM.TOWN	0.608	0.498	0.531	0.23	0.243	0.249			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	LOC.FAC	0.0	0.0	0.0	0.0	0.0	0.0			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	LOC.ORO	0.115	0.26	0.227	0.347	0.268	0.41			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	LOC.PHYS.GEO	0.242	0.22	0.255	0.34	0.342	0.325			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	LOC.PHYS.HYDRO	0.287	0.248	0.283	0.423	0.423	0.408			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	LOC.UNK	0.0	0.0	0.0	0.0	0.0	0.0			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	ORG.ADM	0.053	0.148	0.127	0.156	0.114	0.211			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	ORG.ENT	0.099	0.352	0.216	0.287	0.24	0.42			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	ORG.ENT.PRESSAGENCY	0.16	0.182	0.196	0.353	0.332	0.347			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	PERS.COLL	0.2	0.25	0.25	0.433	0.4	0.433			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	PERS.IND	0.177	0.33	0.228	0.15	0.14	0.243			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	PERS.IND.ARTICLEAUTHOR	0.0	0.0	0.0	0.0	0.0	0.0			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	PROD.DOCTR	0.0	0.0	0.0	0.0	0.0	0.0			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	PROD.MEDIA	0.248	0.203	0.207	0.233	0.299	0.28			
+../data/results/final_predictions.tsv	NE-FINE-LIT-macro_doc-strict-TIME-ALL-LED-ALL	TIME.DATE.ABS	0.274	0.395	0.404	0.374	0.376	0.396			
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	ALL	0	0.0	0				0	0	82
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.NAT	0	0.0	0				0	0	8
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.REG	0	0.0	0				0	0	9
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.TOWN	0	0.0	0				0	0	40
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	LOC.PHYS.GEO	0	0.0	0				0	0	1
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	LOC.PHYS.HYDRO	0	0.0	0				0	0	4
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	ORG.ADM	0	0.0	0				0	0	3
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	ORG.ENT	0	0.0	0				0	0	6
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	PERS.IND	0	0.0	0				0	0	9
+../data/results/final_predictions.tsv	NE-NESTED-micro-fuzzy-TIME-ALL-LED-ALL	PROD.MEDIA	0	0.0	0				0	0	2
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	ALL	0	0.0	0				0	0	82
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	LOC.ADM.NAT	0	0.0	0				0	0	8
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	LOC.ADM.REG	0	0.0	0				0	0	9
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	LOC.ADM.TOWN	0	0.0	0				0	0	40
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	LOC.PHYS.GEO	0	0.0	0				0	0	1
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	LOC.PHYS.HYDRO	0	0.0	0				0	0	4
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	ORG.ADM	0	0.0	0				0	0	3
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	ORG.ENT	0	0.0	0				0	0	6
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	PERS.IND	0	0.0	0				0	0	9
+../data/results/final_predictions.tsv	NE-NESTED-micro-strict-TIME-ALL-LED-ALL	PROD.MEDIA	0	0.0	0				0	0	2
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	ALL		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.NAT		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.REG		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.ADM.TOWN		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.PHYS.GEO		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	LOC.PHYS.HYDRO		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	ORG.ADM		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	ORG.ENT		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	PERS.IND		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-fuzzy-TIME-ALL-LED-ALL	PROD.MEDIA		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	ALL		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	LOC.ADM.NAT		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	LOC.ADM.REG		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	LOC.ADM.TOWN		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	LOC.PHYS.GEO		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	LOC.PHYS.HYDRO		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	ORG.ADM		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	ORG.ENT		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	PERS.IND		0.0				0.0			
+../data/results/final_predictions.tsv	NE-NESTED-macro_doc-strict-TIME-ALL-LED-ALL	PROD.MEDIA		0.0				0.0			

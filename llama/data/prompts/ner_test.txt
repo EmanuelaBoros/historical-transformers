@@ -1,0 +1,98 @@
+Annotate the entities within the given text based on the guidelines provided. Ensure the entities and their sub-components are accurately tagged. Once you've familiarized yourself with the guidelines below, you will be provided a text to annotate.
+
+Entity Guidelines:
+1. Entity Type: Person
+    Subtypes:
+        pers.ind: Individual persons.
+        pers.ind.articleauthor: Author of a newspaper article.
+        pers.coll: Groups of individuals identifiable by a proper name, e.g., the Beatles.
+    Components:
+        comp.func: Roles, including occupations, administrative roles, or societal roles.
+        comp.title: Titles (Mr., Mrs., etc.), military ranks, noble, and royal titles.
+        comp.qualifier: Adjectives describing the entity.
+        comp.name: Parts of a name: first, middle, last, or nicknames.
+        demonym: Residents of a specific location.
+    Examples:
+        Example:
+            Mais il a cédé quand M . Hagenbeck a déclaré qu ' il prenait la responsabilité de ce qui pourrait arriver !" ➞
+        Response:
+            Mais il a cédé quand <pers.ind> <comp.title> M . </comp.title> <comp.name> Hagenbeck </comp.name> </pers.ind> a déclaré qu ' il prenait la responsabilité de ce qui pourrait arriver !
+
+        Example:
+            Cette nomination lui permet d ' entrer dans la Chambre des lords .
+        Answer:
+            Cette nomination lui permet d ' entrer dans la <org.adm> Chambre des lords </org.adm> .
+
+2. Entity Type: Organisation
+    Subtypes:
+        org.ent: Companies selling products or providing services (e.g., hospitals, sports clubs).
+        org.adm: Organisations with a primary administrative role (e.g., town halls, ministries).
+        org.ent.pressagency: Newspapers material like AFP, Reuters.
+    Examples:
+        Example:
+            En même temps que le congrès , différentes - ociétés ont eu leur séance - annuelle : les Templiers , la Ligue anti - alcoolique , les étudiants abstinents _ , etc .
+        Answer:
+            En même temps que le congrès , différentes - ociétés ont eu leur séance - annuelle : les <org.ent> Templiers </org.ent> , la <org.ent> Ligue anti - alcoolique </org.ent> , les <org.ent> étudiants abstinents _ </org.ent> , etc .
+
+3. Entity Type: Location
+    A. Administrative Locations:
+        loc.adm.town: Cities, villages, districts, boroughs.
+            Example:
+                L ' assemblée générale de la Société suisse des imprimeurs , réunie samedi et dimanche à Frauenfeld , comptait de nombreux _ parfic - - pants .
+            Answer:
+                L ' assemblée générale de la <org.ent> Société suisse des imprimeurs </org.ent> , réunie samedi et dimanche à <loc.adm.town> Frauenfeld </loc.adm.town> , comptait de nombreux _ parfic - - pants .
+        loc.adm.reg: Internal divisions within a country.
+            Example:
+                Le comité conservateur du canton de Fribourg a décidé de recommander aux électeurs de voter l ' article concernant les arts et métiers et l ' initiative contre l ' absinthe .
+            Answer:
+                Le comité conservateur du <loc.adm.reg> canton de <comp.name> Fribourg </comp.name> </loc.adm.reg> a décidé de recommander aux électeurs de voter l ' article concernant les arts et métiers et l ' initiative contre l ' absinthe .
+        loc.adm.nat: Countries.
+            Example:
+                La commission demande que l ' on s ' occupe spécialement de la situation déplorable des Suisses en Russie .
+            Answer:
+                La commission demande que l ' on s ' occupe spécialement de la situation déplorable des Suisses en <loc.adm.nat> Russie </loc.adm.nat> .
+        loc.adm.sup: Global regions, continents.
+            Example:
+                Si l ' Angleterre parvient a mettre un terme , définitivement , au pelil jeu des rivalités stériles auquel trop longtemps elle se livra vis - à - vis de la France , en Méditerranée ou au Moyen - Oriertl , ce ne sera pas là un des moindres bienfaits à mettre à l ' actif de la transformation de régime qui s ' opère chez nos voisins d ' outre - Doubs .
+            Answer:
+                Si l ' <loc.adm.nat> Angleterre </loc.adm.nat> parvient a mettre un terme , définitivement , au pelil jeu des rivalités stériles auquel trop longtemps elle se livra vis - à - vis de la <loc.adm.nat> France </loc.adm.nat> , en <loc.adm.sup> Méditerranée </loc.adm.sup> ou au <loc.adm.sup> Moyen - Oriertl </loc.adm.sup> , ce ne sera pas là un des moindres bienfaits à mettre à l ' actif de la transformation de régime qui s ' opère chez nos voisins d ' <loc.adm.reg> outre - Doubs </loc.adm.reg> .
+    B. Physical Places:
+        loc.phys.geo: Terrestrial locations.
+            Example:
+                Les habitants ressemblent à ceux de la Forét - Noire , ne comprennent pas le français , qui n ' est enseigné que depuis vingt ans .
+            Answer:
+                Les habitants ressemblent à ceux de la <loc.phys.geo> Forét - Noire </loc.phys.geo> , ne comprennent pas le français , qui n ' est enseigné que depuis vingt ans .
+        loc.phys.hydro: Aquatic sites.
+            Example:
+                Au nord du Danube et de la Save se trouve une grande quantité de butin et de bétail - que les Austro - Allemands ont emportée de ïa Serbie et qui sera ramenée au pays .
+            Answer:
+                Au nord du <loc.phys.hydro> Danube </loc.phys.hydro> et de la <loc.phys.hydro> Save </loc.phys.hydro> se trouve une grande quantité de butin et de bétail - que les Austro - Allemands ont emportée de ïa <loc.adm.nat> Serbie </loc.adm.nat> et qui sera ramenée au pays .
+        loc.phys.astro: Astronomical places.
+            Example:
+                La planète Mars"
+            Answer:
+                <loc.phys.astro> La planète Mars </loc.phys.astro>
+
+4. Entity Type: Human Productions
+    A. Media Production: prod.media
+    Example:
+        Nous recevons le premier numéro d ' un nouveau journal , le Radical - Libéral , qui paraîtra à Genève deux fois la semaine .
+    Answer:
+        Nous recevons le premier numéro d ' un nouveau journal , le <prod.media> Radical - Libéral </prod.media> , qui paraîtra à <loc.adm.town> Genève </loc.adm.town> deux fois la semaine .
+    B. Doctrine: prod.doctr
+    Example:
+        Son but est de représenter l ' élément national du radicalisme genevois , en d ' autres termes , de défendre la politique intransigeante do M . Carteret , en opposition aux tendances du groupe _ > dont le Genevois est l ' organe .
+    Answer:
+        Son but est de représenter l ' élément national du <prod.doctr> <comp.name> radicalisme </comp.name> genevois </prod.doctr> , en d ' autres termes , de défendre la politique intransigeante do <pers.ind> <comp.title> M . </comp.title> <comp.name> Carteret </comp.name> </pers.ind> , en opposition aux tendances du groupe _ > dont le Genevois est l ' organe .
+
+5. Entity Type: Time
+    A. Date: time.date
+    Example:
+        Il y a eu à Boncourt en 1886 : 24 naissances , dont 11 garçons , 13 filles , 11 bourgeois , 13 non bourgeois , 16 Suisses , 8 étrangers à la Suisse ; — 24 décès , dont 11 hommes , 13 femmes , 11 bourgeois , 13 non bourgeois , 16 Suisses , 8 étrangers à la Suisse .
+    Answer:
+        Il y a eu à <loc.adm.town> Boncourt </loc.adm.town> <time.date.abs> en 1886 </time.date.abs> : 24 naissances , dont 11 garçons , 13 filles , 11 bourgeois , 13 non bourgeois , 16 Suisses , 8 étrangers à la <loc.adm.nat> <loc.adm.nat> Suisse </loc.adm.nat> </loc.adm.nat> ; — 24 décès , dont 11 hommes , 13 femmes , 11 bourgeois , 13 non bourgeois , 16 Suisses , 8 étrangers à la Suisse .
+
+Please proceed with annotating the entities in the following text.
+Example:
+    Le public est averti que Charlotte née Bourgoin , femme - de Joseph Digiez , et Maurice Bourgoin , enfant mineur représenté par le sieur Jaques Charles Gicot son curateur , ont été admis par arrêt du Conseil d ' Etat du 5 décembre 1797 , à solliciter une renonciation générale et absolue aux biens et aux dettes présentes et futures de Jean - Baptiste Bourgoin leur pe ' re , et qu ' en conséquence , les susdits enfans , duement assistés et autorisés , se présenteront par - devant ia noble justice du Landeron _ , le mer - , credi 17 janvier courant , pour y porter la prédite renonciation ; assignant péremptoirement tous ceux qui estimeraient être ' fondés à s ' y opposer , à _ comparcutre ce jour - là en dite justice , pour hure va _ ^ pir leurs droits et alléguer leurs moyens d ' _ opposW _ | _ priS , sou 3 peine ' de forclusion .
+Answer:
