@@ -93,6 +93,42 @@ python -m pip install jsonlines nltk
 
 The LLaMA experiments require access to the corresponding Hugging Face model weights, for example `meta-llama/Llama-2-7b-hf`.
 
+## HIPE Data Preparation
+
+The HIPE TSV files can be converted into the instruction-style JSONL format with:
+
+```bash
+cd llama/data/hipe
+python preprocess.py
+```
+
+This creates files such as:
+
+```text
+HIPE-2022-v2.1-hipe2020-train-fr_universal.jsonl
+HIPE-2022-v2.1-hipe2020-dev-fr_universal.jsonl
+HIPE-2022-v2.1-hipe2020-test-fr_universal.jsonl
+```
+
+## Fine-Tuning
+
+From the `llama/` directory, fine-tune LLaMA with LoRA and FSDP:
+
+```bash
+torchrun --nnodes 1 --nproc_per_node 2 finetuning.py \
+  --enable_fsdp \
+  --use_peft \
+  --peft_method lora \
+  --model_name meta-llama/Llama-2-7b-hf \
+  --pure_bf16 \
+  --output_dir ./exp/hipe_llama7b_prompt_1 \
+  --use_fast_kernels \
+  --dataset hipe_dataset \
+  --save_model
+```
+
+Adjust `--nproc_per_node`, batch settings, and model path according to your GPU setup.
+
 
 
 
