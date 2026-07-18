@@ -8,6 +8,24 @@ The repository brings together three related work areas:
 - **ArchivalQA data preparation**: notebooks and resources for generating open-domain question answering data over archival news collections.
 - **Long-horizon transformers**: experimental transformer and capsule-network components for longer document modeling.
 
+## Repository Structure
+
+```text
+.
+├── llama/
+│   ├── data/hipe/                 # HIPE TSV and JSONL data used for NER fine-tuning
+│   ├── data/prompts/              # Prompt templates for NER experiments
+│   ├── ft_datasets/hipe_dataset.py # Custom HIPE instruction dataset wrapper
+│   ├── finetuning.py              # LLaMA fine-tuning entry point
+│   ├── inference.py               # Inference over the HIPE test split
+│   ├── evaluate.py                # Converts generated tags back to HIPE-style TSV
+│   └── HIPE-scorer/               # HIPE evaluation scripts
+├── data_preparation/
+│   └── archival-qa/               # ArchivalQA dataset generation framework
+├── long-horizon-transformer/      # Long-context transformer and capsule experiments
+└── README.md
+```
+
 
 
 
