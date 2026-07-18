@@ -129,6 +129,37 @@ torchrun --nnodes 1 --nproc_per_node 2 finetuning.py \
 
 Adjust `--nproc_per_node`, batch settings, and model path according to your GPU setup.
 
+## Inference
+
+Run inference on the HIPE test split:
+
+```bash
+python inference.py \
+  --model_name meta-llama/Llama-2-7b-hf \
+  --peft_model exp/hipe_llama7b_prompt_1/epoch-2/ \
+  --max_padding_length 4096 \
+  --max_new_tokens 100
+```
+
+Predictions are written as JSONL files under `llama/data/hipe/results/`.
+
+## Convert Predictions for HIPE Scoring
+
+Convert generated inline tags back to HIPE-style TSV:
+
+```bash
+python evaluate.py
+```
+
+The script writes:
+
+```text
+llama/data/results/final_predictions.tsv
+```
+
+You can then use the scorer in `llama/HIPE-scorer/` to evaluate the converted predictions.
+
+
 
 
 
