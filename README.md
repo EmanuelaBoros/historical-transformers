@@ -63,6 +63,38 @@ The `data_preparation/archival-qa/` folder contains material from the ArchivalQA
 
 See [`data_preparation/archival-qa/README.md`](data_preparation/archival-qa/README.md) and [`data_preparation/archival-qa/Dataset_Generation_Framework/README.md`](data_preparation/archival-qa/Dataset_Generation_Framework/README.md) for details.
 
+### 4. Explore Long-Horizon Transformer Experiments
+
+The `long-horizon-transformer/` folder contains experimental code for masked language modeling and custom transformer/capsule architectures, including:
+
+- `run_mlm.py` and `run_mlm_no_trainer.py` for masked language model training.
+- `transformer.py`, `relative_transformer.py`, and `attention.py` for transformer components.
+- Capsule-network implementations and experiments under `capsule/`, `CapsuleLayer/`, `CapsNet-Pytorch/`, and `CCCapsNet/`.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/EmanuelaBoros/historical-transformers.git
+cd historical-transformers
+```
+
+Create an environment for the LLaMA/HIPE experiments:
+
+```bash
+cd llama
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m pip install jsonlines nltk
+```
+
+The LLaMA experiments require access to the corresponding Hugging Face model weights, for example `meta-llama/Llama-2-7b-hf`.
+
+
+
 
 
 
