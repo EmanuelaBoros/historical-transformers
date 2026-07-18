@@ -26,6 +26,29 @@ The repository brings together three related work areas:
 └── README.md
 ```
 
+## Main Use Cases
+
+### 1. Fine-tune LLaMA for Historical NER
+
+The `llama/` folder adapts Meta's LLaMA fine-tuning recipes to HIPE-style historical named entity recognition. The custom dataset wrapper reads the preprocessed files:
+
+```text
+llama/data/hipe/HIPE-2022-v2.1-hipe2020-train-fr_universal.jsonl
+llama/data/hipe/HIPE-2022-v2.1-hipe2020-dev-fr_universal.jsonl
+llama/data/hipe/HIPE-2022-v2.1-hipe2020-test-fr_universal.jsonl
+```
+
+These JSONL files contain sentence-level examples with:
+
+| Field | Description |
+|---|---|
+| `tokens` | Input sentence tokens serialized as text |
+| `tags` | Target output with inline entity tags |
+
+The model is trained to generate tagged text from an instruction prompt.
+
+
+
 
 
 
