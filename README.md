@@ -47,6 +47,23 @@ These JSONL files contain sentence-level examples with:
 
 The model is trained to generate tagged text from an instruction prompt.
 
+### 2. Run Inference and Convert Predictions
+
+After fine-tuning, `llama/inference.py` generates predictions for the HIPE test split. `llama/evaluate.py` then maps generated inline tags back into a HIPE-compatible TSV format for scoring.
+
+### 3. Prepare ArchivalQA Data
+
+The `data_preparation/archival-qa/` folder contains material from the ArchivalQA dataset generation framework. It includes notebooks for:
+
+1. Article selection.
+2. Question generation.
+3. Syntactic and temporal processing.
+4. General and temporal ambiguity filtering.
+5. Triple-based filtering.
+
+See [`data_preparation/archival-qa/README.md`](data_preparation/archival-qa/README.md) and [`data_preparation/archival-qa/Dataset_Generation_Framework/README.md`](data_preparation/archival-qa/Dataset_Generation_Framework/README.md) for details.
+
+
 
 
 
