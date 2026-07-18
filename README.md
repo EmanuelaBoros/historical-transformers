@@ -159,6 +159,13 @@ llama/data/results/final_predictions.tsv
 
 You can then use the scorer in `llama/HIPE-scorer/` to evaluate the converted predictions.
 
+## Notes
+
+- The `llama/` code is based on LLaMA fine-tuning recipes and includes upstream recipe documentation in `llama/docs/`.
+- The ArchivalQA component includes data-generation notebooks and auxiliary resources, but some original external corpora must be obtained from their official providers.
+- Several folders contain experimental or vendored research code; check the relevant subfolder README before reusing a component independently.
+
+
 
 
 
